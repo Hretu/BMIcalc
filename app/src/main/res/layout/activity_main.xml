@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Your Height:"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        />
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvHeight"
+        android:hint="(centimeters)"
+        android:gravity="center"
+        />
+    <!--<TextView-->
+    <!--android:id="@+id/tvCm"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_below="@+id/etHeight"-->
+    <!--android:layout_toRightOf="@+id/tvWeight"-->
+    <!--android:text="(centimeters)"-->
+    <!--/>-->
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Your Weight:"
+        android:layout_below="@+id/tvHeight"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        />
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etHeight"
+        android:layout_toRightOf="@+id/tvHeight"
+        android:hint="(kilograms)"
+        android:gravity="center"
+        />
+    <!--<TextView-->
+    <!--android:id="@+id/tvKg"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_below="@+id/etWeight"-->
+    <!--android:layout_toRightOf="@+id/tvWeight"-->
+    <!--android:text="(kilograms)"-->
+    <!--/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalc"
+        android:layout_below="@+id/etWeight"
+        android:layout_toRightOf="@+id/tvWeight"
+        android:text="Compute BMI"
+        />
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI:"
+        android:layout_centerInParent="true"
+        />
+    <EditText
+        android:id="@+id/etShowBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:layout_below="@+id/tvBMI"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
